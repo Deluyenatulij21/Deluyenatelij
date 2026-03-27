@@ -3,131 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Silent Letters Master List</title>
+    <title>English Silent Letters (A-Z)</title>
     <style>
-        :root { --primary: #2c3e50; --secondary: #3498db; --accent: #e74c3c; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg); margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 1100px; margin: auto; }
-        
-        header { text-align: center; background: var(--primary); color: white; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        
-        /* Search Bar Style */
-        .search-box { width: 100%; padding: 15px; font-size: 18px; border: 2px solid #ddd; border-radius: 30px; margin-bottom: 20px; outline: none; transition: 0.3s; box-sizing: border-box; }
-        .search-box:focus { border-color: var(--secondary); box-shadow: 0 0 10px rgba(52, 152, 219, 0.2); }
-
-        table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
-        th, td { padding: 18px; text-align: left; border-bottom: 1px solid #eee; }
-        th { background: var(--secondary); color: white; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
-        
-        tr:hover { background-color: #fcfcfc; }
-        .silent { color: var(--accent); font-weight: bold; text-decoration: underline; }
-        .pronunciation { color: #666; font-style: italic; font-size: 0.9em; }
-        
-        /* Play Button */
-        .play-btn { background: #27ae60; color: white; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 14px; transition: 0.2s; }
-        .play-btn:hover { background: #219150; transform: scale(1.05); }
-        
-        @media (max-width: 768px) {
-            table, thead, tbody, th, td, tr { display: block; }
-            th { display: none; }
-            tr { margin-bottom: 15px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; }
-            td { text-align: right; padding-left: 50%; position: relative; border-bottom: none; }
-            td::before { content: attr(data-label); position: absolute; left: 15px; font-weight: bold; color: var(--secondary); }
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        header { background: #2c3e50; color: white; padding: 2rem text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        h1 { margin: 0; }
+        .container { max-width: 1000px; margin: auto; overflow: hidden; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #3498db; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        .silent-letter { color: #e74c3c; font-weight: bold; text-decoration: underline; }
+        .pronunciation { font-style: italic; color: #7f8c8d; }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>English Silent Letters (A-Z)</h1>
+    <p>የእንግሊዝኛ ዝምተኛ ፊደላት ዝርዝር እና ትርጉም</p>
+</header>
+
 <div class="container">
-    <header>
-        <h1>English Silent Letters (A-Z)</h1>
-        <p>ቃላትን መፈለግ እና አነባበባቸውን ማድመጥ ይችላሉ</p>
-    </header>
-
-    <input type="text" id="searchInput" class="search-box" placeholder="ቃላትን እዚህ ይፈልጉ (Search words here...)" onkeyup="filterTable()">
-
-    <table id="wordTable">
+    <table>
         <thead>
             <tr>
                 <th>Letter</th>
-                <th>Word</th>
-                <th>Pronunciation</th>
+                <th>Word (Word)</th>
+                <th>Pronunciation (አነባበብ)</th>
                 <th>English Meaning</th>
                 <th>Amharic Translation</th>
-                <th>Listen</th>
             </tr>
         </thead>
-        <tbody id="tableBody">
-            </tbody>
+        <tbody>
+            <tr>
+                <td><strong>A</strong></td>
+                <td>Artistic<span class="silent-letter">a</span>lly</td>
+                <td class="pronunciation">/ar-tis-tik-lee/</td>
+                <td>In an artistic way</td>
+                <td>በጥበባዊ መንገድ</td>
+            </tr>
+            <tr>
+                <td><strong>B</strong></td>
+                <td>Com<span class="silent-letter">b</span></td>
+                <td class="pronunciation">/kohm/</td>
+                <td>Tool for tidying hair</td>
+                <td>ማበጠሪያ</td>
+            </tr>
+            <tr>
+                <td><strong>C</strong></td>
+                <td>Mus<span class="silent-letter">c</span>le</td>
+                <td class="pronunciation">/muh-suhl/</td>
+                <td>Body tissue used for movement</td>
+                <td>ጡንቻ</td>
+            </tr>
+            <tr>
+                <td><strong>D</strong></td>
+                <td>San<span class="silent-letter">d</span>wich</td>
+                <td class="pronunciation">/san-wich/</td>
+                <td>Bread with fillings</td>
+                <td>ሳንድዊች</td>
+            </tr>
+            <tr>
+                <td><strong>G</strong></td>
+                <td>Si<span class="silent-letter">g</span>n</td>
+                <td class="pronunciation">/sain/</td>
+                <td>A symbol or notice</td>
+                <td>ምልክት</td>
+            </tr>
+            <tr>
+                <td><strong>H</strong></td>
+                <td><span class="silent-letter">H</span>onest</td>
+                <td class="pronunciation">/on-ist/</td>
+                <td>Telling the truth</td>
+                <td>ታማኝ / እውነተኛ</td>
+            </tr>
+            <tr>
+                <td><strong>K</strong></td>
+                <td><span class="silent-letter">K</span>nee</td>
+                <td class="pronunciation">/nee/</td>
+                <td>Joint in the middle of the leg</td>
+                <td>ጉልበት</td>
+            </tr>
+            <tr>
+                <td><strong>L</strong></td>
+                <td>Wa<span class="silent-letter">l</span>k</td>
+                <td class="pronunciation">/wok/</td>
+                <td>To move by foot</td>
+                <td>በእግር መጓዝ</td>
+            </tr>
+            <tr>
+                <td><strong>P</strong></td>
+                <td><span class="silent-letter">P</span>sychology</td>
+                <td class="pronunciation">/sai-kol-uh-jee/</td>
+                <td>Study of the mind</td>
+                <td>ስነ-ልቦና</td>
+            </tr>
+            <tr>
+                <td><strong>W</strong></td>
+                <td><span class="silent-letter">W</span>rite</td>
+                <td class="pronunciation">/rait/</td>
+                <td>Marking paper with words</td>
+                <td>መጻፍ</td>
+            </tr>
+        </tbody>
     </table>
 </div>
-
-<script>
-    const silentWords = [
-        { letter: "A", word: "Logic<span class='silent'>a</span>lly", pron: "/lo-jik-lee/", eng: "In a logical way", amh: "በምክንያታዊ መንገድ" },
-        { letter: "B", word: "Clim<span class='silent'>b</span>", pron: "/klaim/", eng: "To go up", amh: "መውጣት (ተራራ...)" },
-        { letter: "B", word: "Dou<span class='silent'>b</span>t", pron: "/daut/", eng: "Uncertainty", amh: "ጥርጣሬ" },
-        { letter: "C", word: "S<span class='silent'>c</span>issors", pron: "/si-zerz/", eng: "Cutting tool", amh: "መቀስ" },
-        { letter: "D", word: "Han<span class='silent'>d</span>some", pron: "/han-sum/", eng: "Good looking", amh: "መልከ መልካም" },
-        { letter: "E", word: "Bridg<span class='silent'>e</span>", pron: "/brij/", eng: "Structure over water", amh: "ድልድይ" },
-        { letter: "G", word: "Forei<span class='silent'>g</span>n", pron: "/for-en/", eng: "From another country", amh: "የውጭ ሀገር" },
-        { letter: "G", word: "Desi<span class='silent'>g</span>n", pron: "/di-zain/", eng: "A plan or sketch", amh: "ንድፍ" },
-        { letter: "H", word: "R<span class='silent'>h</span>ythm", pron: "/ri-thuhm/", eng: "Regular beat", amh: "ዜማ / ምት" },
-        { letter: "H", word: "<span class='silent'>H</span>our", pron: "/au-er/", eng: "60 minutes", amh: "ሰዓት" },
-        { letter: "K", word: "<span class='silent'>K</span>nowledge", pron: "/no-lij/", eng: "Understanding", amh: "እውቀት" },
-        { letter: "L", word: "Cou<span class='silent'>l</span>d", pron: "/kud/", eng: "Past of can", amh: "ይችል ነበር" },
-        { letter: "L", word: "Ha<span class='silent'>l</span>f", pron: "/haf/", eng: "50 percent", amh: "ግማሽ" },
-        { letter: "N", word: "Colum<span class='silent'>n</span>", pron: "/kol-um/", eng: "Vertical pillar", amh: "አምድ" },
-        { letter: "P", word: "Recei<span class='silent'>p</span>t", pron: "/re-seet/", eng: "Proof of payment", amh: "ደረሰኝ" },
-        { letter: "S", word: "I<span class='silent'>s</span>land", pron: "/ai-land/", eng: "Land in water", amh: "ደሴት" },
-        { letter: "T", word: "Cas<span class='silent'>t</span>le", pron: "/ka-suhl/", eng: "Large old building", amh: "ግንብ / ቤተ-መንግስት" },
-        { letter: "T", word: "Sof<span class='silent'>t</span>en", pron: "/so-fen/", eng: "To make soft", amh: "ማለስለስ" },
-        { letter: "U", word: "G<span class='silent'>u</span>ard", pron: "/gard/", eng: "Protector", amh: "ጠባቂ" },
-        { letter: "W", word: "S<span class='silent'>w</span>ord", pron: "/sord/", eng: "Weapon with blade", amh: "ሰይፍ" },
-        { letter: "W", word: "<span class='silent'>W</span>hole", pron: "/hol/", eng: "Complete", amh: "ሙሉ" }
-    ];
-
-    const tableBody = document.getElementById('tableBody');
-
-    function loadTable(data) {
-        tableBody.innerHTML = "";
-        data.forEach(item => {
-            let row = `<tr>
-                <td data-label="Letter"><strong>${item.letter}</strong></td>
-                <td data-label="Word">${item.word}</td>
-                <td data-label="Pronunciation" class="pronunciation">${item.pron}</td>
-                <td data-label="Meaning">${item.eng}</td>
-                <td data-label="Amharic">${item.amh}</td>
-                <td data-label="Listen">
-                    <button class="play-btn" onclick="speak('${item.word.replace(/<[^>]*>/g, '')}')">🔊 Play</button>
-                </td>
-            </tr>`;
-            tableBody.innerHTML += row;
-        });
-    }
-
-    // Search Logic
-    function filterTable() {
-        let input = document.getElementById('searchInput').value.toLowerCase();
-        let filteredData = silentWords.filter(item => 
-            item.word.toLowerCase().includes(input) || 
-            item.amh.includes(input) || 
-            item.letter.toLowerCase() === input
-        );
-        loadTable(filteredData);
-    }
-
-    // Audio Logic (Text-to-Speech)
-    function speak(word) {
-        let utterance = new SpeechSynthesisUtterance(word);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.8;
-        window.speechSynthesis.speak(utterance);
-    }
-
-    // Initial Load
-    loadTable(silentWords);
-</script>
 
 </body>
 </html>
